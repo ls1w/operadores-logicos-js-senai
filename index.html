@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>OPERADORES LÓGICOS</title>
+
+</head>
+
+    <body>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center vh-100">
+                    <div class="col-auto bg-secondary p-5 rounded">
+
+                        <form onsubmit="return false">
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label fw-bold text-light" for="numero1">NUMERO 1</label>
+                                    <input class="form-control" type="number" name="numero1" id="numero1">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label fw-bold text-light" for="numero2">NUMERO 2</label>
+                                    <input class="form-control" type="number" name="numero2" id="numero2">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label fw-bold text-light" for="numero2">NUMERO 3</label>
+                                    <input class="form-control" type="number" name="numero3" id="numero3">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label fw-bold text-light" for="operador">OPERADOR LÓGICO</label>
+                                    <select class="form-select" name="slcOperador" id="slcOperador">
+                                        <option value="">Selecione: </option>
+                                        <option value="or">(OR - ||)</option>
+                                        <option value="and">(AND - &&)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label fw-bold text-light">RESULTADO: </label>
+                                </div>
+
+                                <div class="col">
+                                    <label class="form-label fw-bold text-light" name="resultado" id="resultado">-</label>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary mt-2" name="calcular" id="calcular" onclick="verificar()">VERIFICAR</button>
+                                </div>
+
+                                <div class="col">
+                                    <button type="submit" class="btn btn-danger mt-2" onclick="limpar()">LIMPAR</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="operadores_logicos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
